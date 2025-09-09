@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tugas sinus"/>
+        <attribute name="authors" value="Hendra Manudinata"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-09 11:52:27 AM"/>
+        <attribute name="created" value="SGVuZHJhIE1hbnVkaW5hdGE7TEFQVE9QTkRSQTsyMDI1LTA5LTA4OzA3OjM3OjE2IFBNOzM3MDM="/>
+        <attribute name="edited" value="SGVuZHJhIE1hbnVkaW5hdGE7TEFQVE9QTkRSQTsyMDI1LTA5LTA5OzExOjUyOjI3IEFNOzIyOzM4NDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, n, i, eksponen, radian, hasil, tanda" type="Real" array="False" size=""/>
+            <assign variable="n" expression="5"/>
+            <assign variable="tanda" expression="1"/>
+            <assign variable="hasil" expression="0.0"/>
+            <output expression="&quot;Masukkan x dalam derajat: &quot;" newline="True"/>
+            <input variable="x"/>
+            <assign variable="radian" expression="x * (3.14159265358979323846 / 180.0)"/>
+            <output expression="&quot;Radian: &quot; &amp; radian" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="eksponen" expression="(2 * i) + 1"/>
+                <assign variable="hasil" expression="hasil + (tanda * (radian ^ eksponen) / faktorial(eksponen))"/>
+                <assign variable="tanda" expression="tanda * -1"/>
+            </for>
+            <output expression="hasil" newline="True"/>
+        </body>
+    </function>
+    <function name="faktorial" type="Integer" variable="fact">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="flag, fact" type="Real" array="False" size=""/>
+            <assign variable="fact" expression="1.0"/>
+            <for variable="flag" start="1" end="n" direction="inc" step="1">
+                <assign variable="fact" expression="fact * flag"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

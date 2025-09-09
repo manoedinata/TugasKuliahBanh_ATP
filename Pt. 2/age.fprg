@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="age"/>
+        <attribute name="authors" value="Hendra Manudinata"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-01 10:48:39 AM"/>
+        <attribute name="created" value="SGVuZHJhIE1hbnVkaW5hdGE7TEFQVE9QTkRSQTsyMDI1LTA5LTAxOzEwOjQwOjU1IEFNOzM2NzI="/>
+        <attribute name="edited" value="SGVuZHJhIE1hbnVkaW5hdGE7TEFQVE9QTkRSQTsyMDI1LTA5LTAxOzEwOjQ4OjM5IEFNOzE7Mzc5MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your age&quot;" newline="True"/>
+            <input variable="age"/>
+            <if expression="age &gt;= 18">
+                <then>
+                    <output expression="&quot;You can vote!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Sorry, not yet.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="for"/>
+        <attribute name="authors" value="Hendra Manudinata"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-01 10:51:37 AM"/>
+        <attribute name="created" value="SGVuZHJhIE1hbnVkaW5hdGE7TEFQVE9QTkRSQTsyMDI1LTA5LTAxOzEwOjQ4OjQyIEFNOzM2NzY="/>
+        <attribute name="edited" value="SGVuZHJhIE1hbnVkaW5hdGE7TEFQVE9QTkRSQTsyMDI1LTA5LTAxOzEwOjUxOjM3IEFNOzI7Mzc4Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <for variable="n" start="1" end="100" direction="inc" step="1">
+                <output expression="n" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

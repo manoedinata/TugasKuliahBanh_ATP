@@ -24,11 +24,9 @@ int main() {
 
   cout << "Tinggi badan berapa?  ";
   cin >> tinggi_badan;
-  cin.ignore();
   
   cout << "Berat badan berapa?   ";
   cin >> berat_badan;
-  cin.ignore();
 
   // Siapkan output
   char msg[100];

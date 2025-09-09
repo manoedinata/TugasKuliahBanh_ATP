@@ -16,18 +16,16 @@ int main() {
   
   cout << "Umur kamu berapa?     ";
   cin >> umur;
-  cin.ignore(); // Membersihkan newline character dari buffer
+  cin.ignore(); // Membersihkan newline character dari buffer setelah getline
   
   cout << "Kamu tinggal dimana?  ";
   getline(cin, alamat);
 
   cout << "Tinggi badan berapa?  ";
   cin >> tinggi_badan;
-  cin.ignore();
   
   cout << "Berat badan berapa?   ";
   cin >> berat_badan;
-  cin.ignore();
 
   cout << endl << endl;
   cout << "Jadi, kamu " << nama << ", umur "

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2"/>
+        <attribute name="authors" value="Hendra Manudinata"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-07 12:41:37 AM"/>
+        <attribute name="created" value="SGVuZHJhIE1hbnVkaW5hdGE7TEFQVE9QTkRSQTsyMDI1LTA5LTA2OzExOjM4OjA5IFBNOzM2OTk="/>
+        <attribute name="edited" value="SGVuZHJhIE1hbnVkaW5hdGE7TEFQVE9QTkRSQTsyMDI1LTA5LTA3OzEyOjQxOjM3IEFNOzI7Mzc5MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, a, b, c, total" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="1"/>
+            <assign variable="c" expression="0"/>
+            <assign variable="total" expression="0"/>
+            <while expression="c &lt; (2*n)">
+                <if expression="c % 2 == 1">
+                    <then>
+                        <assign variable="total" expression="total + c"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="c" expression="a + b"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="c"/>
+            </while>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

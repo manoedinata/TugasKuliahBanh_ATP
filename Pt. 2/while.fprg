@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="while"/>
+        <attribute name="authors" value="Hendra Manudinata"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-01 10:52:44 AM"/>
+        <attribute name="created" value="SGVuZHJhIE1hbnVkaW5hdGE7TEFQVE9QTkRSQTsyMDI1LTA5LTAxOzEwOjUxOjM5IEFNOzM2NzY="/>
+        <attribute name="edited" value="SGVuZHJhIE1hbnVkaW5hdGE7TEFQVE9QTkRSQTsyMDI1LTA5LTAxOzEwOjUyOjQ0IEFNOzE7Mzc4MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="1"/>
+            <while expression="n &lt;= 100">
+                <output expression="n" newline="True"/>
+                <assign variable="n" expression="n + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
